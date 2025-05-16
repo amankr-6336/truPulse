@@ -1,5 +1,7 @@
 import React from 'react'
 import './Layout.css'
+import NoteList from '../component/noteList/noteList'
+import Button from '../component/common/button/Button'
 
 function Layout() {
   return (
@@ -9,7 +11,9 @@ function Layout() {
                 <h2>Note Taking</h2>
               </div>
               <div className="feature-section">
-                 
+                  <Button>
+                    Add
+                  </Button>
               </div>
         </div>
 
@@ -19,7 +23,7 @@ function Layout() {
                  </div>
 
                  <div className="notes-list">
-                  
+                      <NoteList/>
                  </div>
         </div>
     </div>
